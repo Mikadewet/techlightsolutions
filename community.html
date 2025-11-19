@@ -28,12 +28,13 @@
 			</div>
 		</header>
         <h1>Community Hub</h1>
-
+<img src="img/ITimgs/tyler-franta-iusJ25iYu1c-unsplash.jpg" 
+height="20%" width="90%" alt="Community Collaboration">
         <section id="testimonials">
     <div class="container">
       <div class="section-h">
-        <h2>What clients say</h2>
-        <p>Real feedback from local companies and home offices we support.</p>
+        <h3>Client Feedback</h3>
+        <p class="p1">Real feedback from local companies and home offices we support.</p>
       </div>
       <div class="testimonials">
         <figure class="card">
@@ -52,13 +53,21 @@
     </div>
   </section>
 
-    <button onclick="document.getElementById('change').innerHTML = 'This is Inline JS'">Inline JS</button>
+  <form class="testimonial-form" action="submit_testimonial.php" method="post">
+  <h3>Share Your Experience</h3>
 
-    <button onclick="change_content()">Internal JS</button>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
 
-    <button onclick="dynamic()">External JS</button>
+  <label for="business">Business:</label>
+  <input type="text" id="business" name="business" required>
 
-    <p id="change"></p>
+  <label for="comment">Comment:</label>
+  <textarea id="comment" name="comment" rows="5" required></textarea>
+
+  <button type="submit">Submit Testimonial</button>
+</form>
+
     </body>
     <footer>
         <div class="container">

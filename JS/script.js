@@ -32,3 +32,22 @@ const form = document.querySelector("form");
             alert(errors.join("\n"));
         }
     });
+
+function toggleCard(card) {
+  card.classList.toggle("open");
+}
+
+
+document.getElementById("clientForm").addEventListener("submit", function(event) {
+    
+    const name = document.getElementById("fullName").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+
+    if (name === "" || email === "" || phone === "") {
+        alert("Please fill in all required fields.");
+        event.preventDefault();} 
+    else {
+        alert("Thank you! Your enquiry has been submitted.");
+    }
+});

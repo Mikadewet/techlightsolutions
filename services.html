@@ -21,7 +21,7 @@
 		</header>
         <h1>Our Services</h1>
 
-        <p>At TechLight Solutions, we offer a comprehensive range of IT services tailored to meet the unique needs of small businesses and home offices. Our services include:</p>
+        <p class="p1">At TechLight Solutions, we offer a comprehensive range of IT services tailored to meet the unique needs of small businesses and home offices. Our services include:</p>
 
         <p>Flexible, pay‑as‑you‑need packages and monthly care plans. Choose what fits your team today and scale as you grow.</p>
 
@@ -147,6 +147,38 @@
       </div>
     </div>
   </section>
+  <section id="enquiry-form">
+    <h2>Client Enquiry Form</h2>
+    <p>Please fill in the form below, and our team will contact you shortly.</p>
+
+    <form id="clientForm" action="submit.php" method="POST">
+        
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" placeholder="+27 64 123 4567" required>
+
+        <label for="service">Service Needed *</label>
+        <select id="service" name="service" required>
+            <option value="">-- Select a Service --</option>
+            <option value="Desktop & Laptop Support">Desktop & Laptop Support</option>
+            <option value="Networks & Wi-Fi">Networks & Wi-Fi</option>
+            <option value="Cloud & Backups">Cloud & Backups</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Remote Helpdesk">Remote Helpdesk</option>
+            <option value="Consulting">Consulting</option>
+        </select>
+
+        <label for="message">Your Message *</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us more about your issue or request..." required></textarea>
+
+        <button type="submit" id="submitBtn">Submit Enquiry</button>
+    </form>
+</section>
     </body>
 
     <footer>
